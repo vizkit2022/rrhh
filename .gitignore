@@ -26,4 +26,4 @@ logs
 .nuxt/manifest/meta/dev.json
 .nuxt/manifest/latest.json
 .nuxt/types/imports.d.ts
-.nuxt/
+.nuxt/package-lock.json
