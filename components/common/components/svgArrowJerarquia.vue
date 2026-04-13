@@ -1,0 +1,28 @@
+<script setup>
+defineProps({
+  color: {
+    type: String,
+    default: "currentColor",
+  },
+  size: {
+    type: [String, Number],
+    default: 14,
+  },
+});
+</script>
+
+<template>
+  <svg
+    :style="{ fill: color }"
+    :width="size"
+    :height="size"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M6.86193 0.529247C7.12228 0.268897 7.54439 0.268897 7.80474 0.529247L11.8047 4.52925C12.0651 4.7896 12.0651 5.21171 11.8047 5.47206L7.80474 9.47206C7.54439 9.73241 7.12228 9.73241 6.86193 9.47206C6.60158 9.21171 6.60158 8.7896 6.86193 8.52925L9.72386 5.66732H0.666667C0.298477 5.66732 0 5.36884 0 5.00065C0 4.63246 0.298477 4.33398 0.666667 4.33398H9.72386L6.86193 1.47206C6.60158 1.21171 6.60158 0.789596 6.86193 0.529247Z"
+    />
+  </svg>
+</template>
